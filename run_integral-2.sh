@@ -5,7 +5,7 @@
 #PBS -j oe                               # Об'єднати stdout і stderr
 #PBS -o output_log.txt                   # Файл для виводу логів
 
-cd $PBS_O_WORKDIR
+#cd $PBS_O_WORKDIR
 
 if [ ! -f input.txt ]; then
   echo "Файл input.txt не знайдено!" >&2
